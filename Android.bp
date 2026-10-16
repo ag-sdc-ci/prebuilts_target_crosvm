@@ -14,3 +14,8 @@ cc_prebuilt_binary {
         "com.android.virt",
     ],
 }
+
+rust_defaults {
+    name: "crosvm_defaults",
+    edition: "2021",
+}
