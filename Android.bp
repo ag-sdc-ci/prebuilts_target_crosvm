@@ -19,3 +19,13 @@ rust_defaults {
     name: "crosvm_defaults",
     edition: "2021",
 }
+
+rust_library {
+    name: "libfuse_rust",
+    crate_name: "fuse",
+    defaults: ["crosvm_defaults"],
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.virt",
+    ],
+}
