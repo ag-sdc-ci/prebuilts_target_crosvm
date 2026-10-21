@@ -24,6 +24,8 @@ rust_library {
     name: "libfuse_rust",
     crate_name: "fuse",
     defaults: ["crosvm_defaults"],
+    srcs: ["Empty.rs"],
+    enabled: false,
     apex_available: [
         "//apex_available:platform",
         "com.android.virt",
